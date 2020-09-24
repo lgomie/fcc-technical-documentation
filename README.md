@@ -4,7 +4,7 @@ Page designed as a challenge for the freeCodeCamp Responsive Web Design Certific
 
 This page in its current state still has some bugs, but since it was made specifically for the test, and all user stories pass, it may or may not be reworked in the near future. Feel free to clone and/or modify it.
 
-## user Stories
+## User Stories
 
 User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
 
