@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+body {
+    background-color: #dadada;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    font-family: inherit;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: 3px solid black;
+}
+
+.navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar li:nth-child(5) {
+    border-bottom: 1px solid;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-doc {
+    position: relative;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.main-doc header {
+    text-align: left;
+}
+
+/* The code box occupies the entire parents width */
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.table {
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.icons-library-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-left: 1px;
+    border-radius: 5px;
+}
+
+.table th, td {
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 3px solid black;
+    }
+    .main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 320px;
+    }
+}
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons.orange600 {
+    color: #FB8C00;
+}
