@@ -6,7 +6,6 @@ body {
 }
 
 header {
-    font-family: inherit;
     color: black;
     text-align: center;
     font-weight: 300;
@@ -24,6 +23,7 @@ h1 {
     width: 300px;
     height: 100%;
     border-right: 3px solid black;
+    background-color: #dadada;
 }
 
 .navbar ul {
@@ -103,28 +103,29 @@ code {
 }
 
 @media (max-width: 400px) {
-    .container {
-        flex-direction: column;
+    h1, h2, h3 {
+        font-size: 1.2rem;
     }
     .navbar {
-        position: absolute;
+        position: fixed;
         top: 0;
         padding: 0;
         margin: 0;
         width: 100%;
-        max-height: 275px;
+        max-height: 150px;
         border: none;
         z-index: 1;
+    }
+    .navbar ul {
         border-bottom: 3px solid black;
     }
     .main-doc {
         position: relative;
         margin-left: 0px;
-        margin-top: 320px;
+        margin-top: 200px;
+        z-index: -1;
     }
 }
-
-/* Rules for sizing the icon. */
 
 .material-icons.md-18 {
     font-size: 18px;
@@ -142,8 +143,6 @@ code {
     font-size: 48px;
 }
 
-/* Rules for using icons as black on a light background. */
-
 .material-icons.md-dark {
     color: rgba(0, 0, 0, 0.54);
 }
@@ -151,8 +150,6 @@ code {
 .material-icons.md-dark.md-inactive {
     color: rgba(0, 0, 0, 0.26);
 }
-
-/* Rules for using icons as white on a dark background. */
 
 .material-icons.md-light {
     color: rgba(255, 255, 255, 1);
