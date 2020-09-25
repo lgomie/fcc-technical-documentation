@@ -114,7 +114,7 @@ code {
         width: 100%;
         max-height: 150px;
         border: none;
-        z-index: 1;
+        z-index: 2;
     }
     .navbar ul {
         border-bottom: 3px solid black;
@@ -123,7 +123,7 @@ code {
         position: relative;
         margin-left: 0px;
         margin-top: 200px;
-        z-index: -1;
+        z-index: 1;
     }
 }
 
